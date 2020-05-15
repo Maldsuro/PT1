@@ -17,97 +17,40 @@ namespace PT1
             InitializeComponent();
         }
 
-        double exPrice1, exPrice2, exPrice3, exPrice4, exPrice5, exPrice6;
+       
         double total = 0;
-        double payment, change;
+        double change;
+       
+        // DITO DI MO NEED ISA ISAHIN PAG HIWA HIWALAYIN YUNG INDEX 
         private void button1_Click(object sender, EventArgs e)
         {
-            string food1 = button1.Text;
-            int a = food1.IndexOf("@")+1;
-            int b = food1.Length;
-            string price1 = food1.Substring(a, 2);
-            string qty = textBox2.Text;
-            int ilan = int.Parse(qty);
-            int priceOne = 25;
-            exPrice1 = ilan * priceOne;
-            listBox1.Items.Add(qty + " x " + food1 + " = " + exPrice1.ToString());
-            total += exPrice1;
-            textBox1.Text = ("Total: " + total.ToString() + ".00");
+            
+            description.Text = button1.Text;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string food2 = button2.Text;
-            int a = food2.IndexOf("@") + 1;
-            int b = food2.Length;
-            string price1 = food2.Substring(a, 2);
-            string qty = textBox2.Text;
-            int ilan = int.Parse(qty);
-            int priceOne = 109;
-            exPrice2 = ilan * priceOne;
-            listBox1.Items.Add(qty + " x " + food2 + " = " + exPrice2.ToString());
-            total += exPrice2;
-            textBox1.Text = ("Total: " + total.ToString() + ".00");
+            description.Text = button2.Text;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string food1 = button3.Text;
-            int a = food1.IndexOf("@") + 1;
-            int b = food1.Length;
-            string price1 = food1.Substring(a, 2);
-            string qty = textBox2.Text;
-            int ilan = int.Parse(qty);
-            int priceOne = 109;
-            exPrice3 = ilan * priceOne;
-            listBox1.Items.Add(qty + " x " + food1 + " = " + exPrice3.ToString());
-            total += exPrice3;
-            textBox1.Text = ("Total: " + total.ToString() + ".00");
+            description.Text = button3.Text;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string food1 = button4.Text;
-            int a = food1.IndexOf("@") + 1;
-            int b = food1.Length;
-            string price1 = food1.Substring(a, 2);
-            string qty = textBox2.Text;
-            int ilan = int.Parse(qty);
-            int priceOne = 109;
-            exPrice4 = ilan * priceOne;
-            listBox1.Items.Add(qty + " x " + food1 + " = " + exPrice4.ToString());
-            total += exPrice4;
-            textBox1.Text = ("Total: " + total.ToString() + ".00");
+            description.Text = button4.Text;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string food1 = button5.Text;
-            int a = food1.IndexOf("@") + 1;
-            int b = food1.Length;
-            string price1 = food1.Substring(a, 2);
-            string qty = textBox2.Text;
-            int ilan = int.Parse(qty);
-            int priceOne = 109;
-            exPrice5 = ilan * priceOne;
-            listBox1.Items.Add(qty + " x " + food1 + " = " + exPrice5.ToString());
-            total += exPrice5;
-            textBox1.Text = ("Total: " + total.ToString() + ".00");
+            description.Text = button5.Text;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string food1 = button6.Text;
-            int a = food1.IndexOf("@") + 1;
-            int b = food1.Length;
-            string price1 = food1.Substring(a, 2);
-            string qty = textBox2.Text;
-            int ilan = int.Parse(qty);
-            int priceOne = 99;
-            exPrice6 = ilan * priceOne;
-            listBox1.Items.Add(qty + " x " + food1 + " = " + exPrice6.ToString());
-            total += exPrice6;
-            textBox1.Text = ("Total: " + total.ToString() + ".00");
+            description.Text = button6.Text;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -134,6 +77,7 @@ namespace PT1
             }
         }
 
+        // BUTTON ADD QUANTITY
         private void button10_Click(object sender, EventArgs e)
         {
             int plus = int.Parse(textBox2.Text);
@@ -142,7 +86,7 @@ namespace PT1
             textBox2.Text = add;
         }
 
-
+        // BUTTON SUBTRACT QUANTITY
         private void button11_Click(object sender, EventArgs e)
         {
             int minus = int.Parse(textBox2.Text);
@@ -155,85 +99,33 @@ namespace PT1
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            button8.Enabled = false;
-            button9.Enabled = false;
-            if (button7.Enabled == true)
-            {
-                button7.Enabled = false;
-                button8.Enabled = true;
-                button9.Enabled = false;
-                textBox3.Visible = true;
-                textBox3.Enabled = true;
-            }
-            else
-            {
-                textBox3.Visible = false;
-                textBox3.Enabled = false;
-                button7.Enabled = true;
-                button8.Enabled = false;
-                button9.Enabled = false;
-                textBox4.Visible = false;
-            }
-        }
-
+      
+        // ETO YUNG SA SUKLI
         private void button8_Click(object sender, EventArgs e)
         {
-            textBox1.Text = string.Empty;
-            textBox4.Visible = true;
-            double total = int.Parse(textBox1.Text);
-            string bayad = textBox3.Text;
-            double pay = int.Parse(bayad);
-            change = pay - total;
-            textBox4.Text = change.ToString();
-            //if (bayad > total)
-            //{
-
-            //}
-            if (button8.Enabled == true)
-            {
-                button7.Enabled = false;
-                button8.Enabled = false;
-                button9.Enabled = true;
-                textBox4.Visible = true;
-            }
-            else
-            {
-                textBox3.Visible = false;
-                textBox3.Enabled = false;
-                button7.Enabled = true;
-                button9.Enabled = false;
-                button8.Enabled = false;
-                textBox4.Visible = false;
-            }
+            // ETO YUNG SA SUKLI
+            // payment dito disable mo na sya 
+            sukli.Enabled = false;
+            // syempre di sya pwede mag type ng presyo 
+            textBox1.ReadOnly = true;
+            // Eto yung tinype nya na price nung sa payment
+            string price = textBox1.Text;
+            // convert
+            double priceDouble = double.Parse(price);
+            // sukli
+            change =priceDouble - total;
+            Console.WriteLine(price);
+            textBox1.Text = change.ToString();
+            // next sale na kasi ayan na nakuha na sukli
+            nextSale.Enabled = true;
         }
 
+
+        // ETO SA NEXT SALE
         private void button9_Click(object sender, EventArgs e)
         {
+            // eto yung sa next sale
             
-            if (button9.Enabled == true)
-            {
-                button7.Enabled = true;
-                button8.Enabled = false;
-                button9.Enabled = false;
-                listBox1.Items.Clear();
-                textBox1.Clear();
-                total = 0;
-                textBox1.Text = (total.ToString()+".00");
-                textBox3.Visible = false;
-                textBox3.Enabled = false;
-                textBox4.Visible = false;
-            }
-            else
-            {
-                button7.Enabled = true;
-                button8.Enabled = false;
-                button9.Enabled = false;
-                textBox3.Visible = false;
-                textBox3.Enabled = false;
-                textBox4.Visible = false;
-            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -246,10 +138,45 @@ namespace PT1
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void addButton_Click(object sender, EventArgs e)
         {
-            
+            // kunin yung quanitty
+            string quantity = textBox2.Text;
+            double quantityDouble = double.Parse(quantity);
+            // Kinuha mo order nya  galing sa description store sa pinili
+            string pinili = description.Text;
+            // NEED ALISINB YUNG PHP KASI PARA MAKUHA MO YUNG PRICE WALANG @25PHP ANG MATITIRA LANG 25
+            pinili = pinili.Replace("Php", "");          
+            int indicator = pinili.IndexOf("@")+1;
+            int length = pinili.Length;
+            // KINUKUHA NETO YUNG DIGIT AFTER NG @      
+            string presyo = pinili.Substring(indicator, length - indicator); // RESULT NETO YUNG 25 OR 99 NA PRICE WALA NG PRODUCTNAME@PRICEPHP
+            double presyoDouble = double.Parse(presyo);
+            // COmpute yung price * sa quantity
+            double finalPresyo = presyoDouble * quantityDouble;
+            total += finalPresyo;
+            // para mag show total price
+            textBox1.Text = total.ToString() + " Php";
+            listBox1.Items.Add(description.Text + " X " + quantityDouble + " = " + finalPresyo.ToString());
+            description.Text = string.Empty;
+           
         }
+
+        private void Bayad_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = string.Empty;
+            // Syempre bawal na mag dagdag kase babayad na
+            addButton.Enabled = false;
+            // Pwede na mag type kase babayad na
+            textBox1.ReadOnly = false;
+            // disable payment
+            Bayad.Enabled = false;
+            // enable change
+            sukli.Enabled = true;
+            textBox1.Focus();
+        }
+
+       
 
        
     }

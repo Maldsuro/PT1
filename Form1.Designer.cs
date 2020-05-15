@@ -43,15 +43,15 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.sukli = new System.Windows.Forms.Button();
+            this.nextSale = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.description = new System.Windows.Forms.TextBox();
+            this.addButton = new System.Windows.Forms.Button();
+            this.Bayad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,8 +65,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(388, 104);
+            this.pictureBox1.Size = new System.Drawing.Size(436, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -75,9 +76,10 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(22, 129);
+            this.pictureBox2.Location = new System.Drawing.Point(25, 161);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(218, 199);
+            this.pictureBox2.Size = new System.Drawing.Size(245, 249);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -86,9 +88,10 @@
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(255, 129);
+            this.pictureBox3.Location = new System.Drawing.Point(287, 161);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(218, 199);
+            this.pictureBox3.Size = new System.Drawing.Size(245, 249);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -97,9 +100,10 @@
             // 
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(493, 129);
+            this.pictureBox4.Location = new System.Drawing.Point(555, 161);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(218, 199);
+            this.pictureBox4.Size = new System.Drawing.Size(245, 249);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -108,9 +112,10 @@
             // 
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(493, 397);
+            this.pictureBox5.Location = new System.Drawing.Point(555, 496);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(218, 199);
+            this.pictureBox5.Size = new System.Drawing.Size(245, 249);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
@@ -119,9 +124,10 @@
             // 
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(22, 397);
+            this.pictureBox6.Location = new System.Drawing.Point(25, 496);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(218, 199);
+            this.pictureBox6.Size = new System.Drawing.Size(245, 249);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
@@ -130,9 +136,10 @@
             // 
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(255, 397);
+            this.pictureBox7.Location = new System.Drawing.Point(287, 496);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(218, 199);
+            this.pictureBox7.Size = new System.Drawing.Size(245, 249);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
@@ -140,9 +147,10 @@
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(22, 344);
+            this.button1.Location = new System.Drawing.Point(25, 430);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 39);
+            this.button1.Size = new System.Drawing.Size(245, 49);
             this.button1.TabIndex = 2;
             this.button1.Text = "IceCreamCone@25Php";
             this.button1.UseVisualStyleBackColor = true;
@@ -151,9 +159,10 @@
             // button2
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(255, 344);
+            this.button2.Location = new System.Drawing.Point(287, 430);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(218, 39);
+            this.button2.Size = new System.Drawing.Size(245, 49);
             this.button2.TabIndex = 2;
             this.button2.Text = "PeanutButterBlizzard@109Php";
             this.button2.UseVisualStyleBackColor = true;
@@ -162,9 +171,10 @@
             // button3
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Location = new System.Drawing.Point(493, 344);
+            this.button3.Location = new System.Drawing.Point(555, 430);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(218, 39);
+            this.button3.Size = new System.Drawing.Size(245, 49);
             this.button3.TabIndex = 2;
             this.button3.Text = "CookiesBlizzard@109Php";
             this.button3.UseVisualStyleBackColor = true;
@@ -173,9 +183,10 @@
             // button4
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Location = new System.Drawing.Point(22, 612);
+            this.button4.Location = new System.Drawing.Point(25, 765);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(218, 39);
+            this.button4.Size = new System.Drawing.Size(245, 49);
             this.button4.TabIndex = 2;
             this.button4.Text = "SnickersBlizzard@109Php";
             this.button4.UseVisualStyleBackColor = true;
@@ -184,9 +195,10 @@
             // button5
             // 
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Location = new System.Drawing.Point(255, 612);
+            this.button5.Location = new System.Drawing.Point(287, 765);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(218, 39);
+            this.button5.Size = new System.Drawing.Size(245, 49);
             this.button5.TabIndex = 2;
             this.button5.Text = "Reese\'sBlizzard@109Php";
             this.button5.UseVisualStyleBackColor = true;
@@ -195,9 +207,10 @@
             // button6
             // 
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Location = new System.Drawing.Point(493, 612);
+            this.button6.Location = new System.Drawing.Point(555, 765);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(218, 39);
+            this.button6.Size = new System.Drawing.Size(245, 49);
             this.button6.TabIndex = 2;
             this.button6.Text = "CookieOreoFrappe@99Php";
             this.button6.UseVisualStyleBackColor = true;
@@ -206,69 +219,62 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(1529, 12);
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(1422, -1);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(299, 356);
+            this.listBox1.Size = new System.Drawing.Size(336, 444);
             this.listBox1.TabIndex = 3;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // button7
+            // sukli
             // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(1529, 374);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(299, 58);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Payment";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.sukli.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sukli.Enabled = false;
+            this.sukli.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sukli.Location = new System.Drawing.Point(1372, 793);
+            this.sukli.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sukli.Name = "sukli";
+            this.sukli.Size = new System.Drawing.Size(336, 72);
+            this.sukli.TabIndex = 4;
+            this.sukli.Text = "Change";
+            this.sukli.UseVisualStyleBackColor = true;
+            this.sukli.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button8
+            // nextSale
             // 
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(1529, 438);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(299, 58);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Change";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(1529, 502);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(299, 58);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Another Sale";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.nextSale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.nextSale.Enabled = false;
+            this.nextSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextSale.Location = new System.Drawing.Point(1501, 644);
+            this.nextSale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nextSale.Name = "nextSale";
+            this.nextSale.Size = new System.Drawing.Size(336, 72);
+            this.nextSale.TabIndex = 4;
+            this.nextSale.Text = "Another Sale";
+            this.nextSale.UseVisualStyleBackColor = true;
+            this.nextSale.Click += new System.EventHandler(this.button9_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(422, 12);
+            this.textBox1.Location = new System.Drawing.Point(475, 15);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(1061, 98);
+            this.textBox1.Size = new System.Drawing.Size(1193, 116);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "0.00";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(842, 535);
+            this.textBox2.Location = new System.Drawing.Point(922, 388);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(55, 61);
+            this.textBox2.Size = new System.Drawing.Size(61, 71);
             this.textBox2.TabIndex = 6;
             this.textBox2.Text = "1";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -277,9 +283,10 @@
             // button10
             // 
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Location = new System.Drawing.Point(894, 602);
+            this.button10.Location = new System.Drawing.Point(1005, 393);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(50, 53);
+            this.button10.Size = new System.Drawing.Size(56, 66);
             this.button10.TabIndex = 7;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
@@ -288,46 +295,58 @@
             // button11
             // 
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.Location = new System.Drawing.Point(795, 602);
+            this.button11.Location = new System.Drawing.Point(855, 393);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(50, 53);
+            this.button11.Size = new System.Drawing.Size(56, 66);
             this.button11.TabIndex = 7;
             this.button11.Text = "-";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // textBox3
+            // description
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(1058, 379);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(465, 53);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Visible = false;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.description.Location = new System.Drawing.Point(835, 694);
+            this.description.Name = "description";
+            this.description.ReadOnly = true;
+            this.description.Size = new System.Drawing.Size(650, 37);
+            this.description.TabIndex = 8;
             // 
-            // textBox4
+            // addButton
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(1058, 438);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(465, 53);
-            this.textBox4.TabIndex = 5;
-            this.textBox4.Visible = false;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.addButton.Location = new System.Drawing.Point(865, 744);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(179, 91);
+            this.addButton.TabIndex = 9;
+            this.addButton.Text = "ADD BUTTON";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // Bayad
+            // 
+            this.Bayad.Location = new System.Drawing.Point(1087, 483);
+            this.Bayad.Name = "Bayad";
+            this.Bayad.Size = new System.Drawing.Size(344, 118);
+            this.Bayad.TabIndex = 10;
+            this.Bayad.Text = "Payment";
+            this.Bayad.UseVisualStyleBackColor = true;
+            this.Bayad.Click += new System.EventHandler(this.Bayad_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
-            this.ClientSize = new System.Drawing.Size(1840, 735);
+            this.ClientSize = new System.Drawing.Size(1924, 919);
+            this.Controls.Add(this.Bayad);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.description);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.nextSale);
+            this.Controls.Add(this.sukli);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button3);
@@ -342,9 +361,8 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -376,15 +394,15 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button sukli;
+        private System.Windows.Forms.Button nextSale;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox description;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button Bayad;
     }
 }
 
